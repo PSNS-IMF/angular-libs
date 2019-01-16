@@ -1,12 +1,11 @@
 {
   "name": "@psns/angular-libs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.js",
   "scripts": {
-    "copy": "gulp",
-    "build": "tsc -p tsconfig.json && npm run copy",
+    "build": "tsc -p tsconfig.json",
     "test": "jest --config jestconfig.json",
     "lint": "tslint -p tsconfig.json && tsfmt --verify",
     "prepare": "npm run build",
@@ -47,7 +46,6 @@
     "@types/node": "^8.9.4",
     "codelyzer": "^4.5.0",
     "core-js": "^2.6.2",
-    "gulp": "^4.0.0",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.5",
     "tslint": "^5.12.1",

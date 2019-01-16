@@ -2,8 +2,17 @@ import { Component, Input, ViewContainerRef, AfterViewInit } from '@angular/core
 
 @Component({
     selector: 'environment-banner',
-    templateUrl: './environment-banner.component.html',
-    styleUrls: ['./environment-banner.component.css']
+    template: '<div class="env-container">{{text}}</div>',
+    styles: [`.env-container {
+        background-color: yellow;
+        color: black;
+        font-family: 'Roboto Bold';
+        position: fixed;
+        text-align: center;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+      }`]
 })
 export class EnvironmentBannerComponent implements AfterViewInit
 {
