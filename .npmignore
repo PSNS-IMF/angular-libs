@@ -1,0 +1,8 @@
+.gitignore
+.vscode
+src
+jestconfig.json
+tsconfig*.json
+tsfmt.json
+tslint.json
+notes.md
