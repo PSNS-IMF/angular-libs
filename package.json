@@ -12,7 +12,7 @@
     "prepare": "npm run build:lib",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
-    "version": "git add -A src test",
+    "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
   "private": true,
