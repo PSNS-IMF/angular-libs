@@ -18,8 +18,11 @@
   * [Markdown](https://guides.github.com/features/mastering-markdown/#what)
 
 ### Publishing Steps
-  * Push changes to master branch
   * [Increment Package Version](https://docs.npmjs.com/cli/version)
-    * i.e. `npm version patch`
+    * `cd dist\angular-libs`
+    * `npm version --no-git-tag-version patch`
+  * `cd ..\..\`
+  * `git tag -a v<version#> -m "tag annotation message"`
+  * `git push && git push --tags`
   * `npm login`
-  * `npm publish`
+  * `npm publish dist\angular-libs`
