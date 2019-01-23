@@ -1,8 +1,10 @@
+.editorconfig
 .gitignore
 .vscode
+angular.json
+notes.md
+projects
 src
-jestconfig.json
 tsconfig*.json
 tsfmt.json
 tslint.json
-notes.md
